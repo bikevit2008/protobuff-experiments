@@ -55,11 +55,15 @@ protobuf.load(protoFile, (err, root) => {
                                     channels: 3
                                 }
                             })
+                            .resize(362, 185, {
+                                kernel: 'lanczos3',
+                                fit: 'fill'
+                            })
                             .toFormat('png')
                             .toFile('output.png')
                             .then(() => {
                                 console.log('Изображение сохранено как output.png');
-                                process.exit(0);
+                                // process.exit(0);
                             })
                             .catch(err => {
                                 console.error('Ошибка при сохранении изображения:', err);
