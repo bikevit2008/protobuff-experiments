@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "protobufjs": "^7.2.3",
-    "sharp": "^0.33.2"
+    "sharp": "^0.33.2",
+    "rpi-ws281x": "^1.0.36"
   }
 }
